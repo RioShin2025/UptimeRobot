@@ -164,11 +164,11 @@ async def telegram_progress(progress_args, processed, total, successful, rate, e
         eta = remaining / rate if rate > 0 else 0
 
         message = (
-            f"🔍 **URL Check Progress**\n"
-            f"📊 `{processed:,}/{total:,}` ({progress_percent:.1f}%)\n"
-            f"✅ **Successful:** `{successful:,}`\n"
-            f"⚡ **Speed:** `{rate:.1f}/sec`\n"
-            f"⏱️ **ETA:** `{eta:.1f}s`"
+            f"<blockquote>🔍 **URL Check Progress**\n</blockquote>"
+            f"<blockquote>📊 `{processed:,}/{total:,}` ({progress_percent:.1f}%)\n</blockquote>"
+            f"<blockquote>✅ **Successful:** `{successful:,}`\n</blockquote>"
+            f"<blockquote>⚡ **Speed:** `{rate:.1f}/sec`\n</blockquote>"
+            f"<blockquote>⏱️ **ETA:** `{eta:.1f}s`</blockquote>"
         )
 
         try:
