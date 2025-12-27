@@ -1,6 +1,6 @@
 from bot import Bot
 
-from TG.broadcast import load_broadcast_cmds
+
 from bot import ADMINS  # or wherever ADMINS is defined
 
 load_broadcast_cmds(Bot, ADMINS)
