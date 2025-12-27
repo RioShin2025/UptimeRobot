@@ -60,12 +60,10 @@ npm install
 
 ### 4º. Getting your chat id.
 
-* First send a message to your bot.
-* Now go to https://api.telegram.org/botYOUR_TOKEN_ID/getUpdates
-* And save your chat id.
+@username_to_id_bot Go to this bot 
 
 ### 5º. Creating the config file
-You must Fill bot.pu
+You must Fill bot.py
 After that you only need to fill all fields in the files'
 
 
