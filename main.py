@@ -3,7 +3,7 @@ from bot import Bot
 from TG.broadcast import load_broadcast_cmds
 from bot import ADMINS  # or wherever ADMINS is defined
 
-load_broadcast_cmds(Bot, ADMINS, uts, sync)
+load_broadcast_cmds(Bot, ADMINS)
 from Tools.db import get_all_urls, remove_expired_urls
 from Tools.requets_handler import runs_checking
 import asyncio
