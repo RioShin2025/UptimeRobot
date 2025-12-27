@@ -89,8 +89,8 @@ After that you only need to fill all fields in the files'
     ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>
 
-- <b>[ᴍᴀᴅᴇ ʙʏ]([https://t.me/BOTSKINGDOMS](https://t.me/BOTSKINGDOMS))  ➻  [ʀɪᴏ sʜɪɴ [ᴛɢ]](https://t.me/RioShin) </b>
-- <b>[ᴘᴏᴡᴇʀᴅ ʙʏ]([https://t.me/BOTSKINGDOMS](https://t.me/BOTSKINGDOMS))  ➻  [ʙᴏᴛsᴋɪɴɢᴅᴏᴍs](https://t.me/BOTSKINGDOMS) </b>
+- <b>[ᴍᴀᴅᴇ ʙʏ]([https://t.me/Wizard_Bots](https://t.me/Wizard_Bots))  ➻  [sʜᴀɴᴋs [ᴛɢ]](https://t.me/RioShin) </b>
+- <b>[ᴘᴏᴡᴇʀᴅ ʙʏ]([https://t.me/Wizard_Bots](https://t.me/Wizard_Bots))  ➻  [ᴡɪᴢᴀʀᴅ ʙᴏᴛs](https://t.me/Wizard_Bots) </b>
 
 <h3 align="center">
 <b>🤝 ᴄᴏɴᴛʀɪʙᴜᴛɪɴɢ
