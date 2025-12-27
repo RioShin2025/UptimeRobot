@@ -1,10 +1,12 @@
-# TG/broadcast.py
 import os
 import sqlite3
 import asyncio
 from contextlib import closing
 from pyrogram import filters
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated, PeerIdInvalid, ChatAdminRequired
+
+# Import your Bot client + ADMINS from bot.py
+from bot import Bot, ADMINS
 
 DB = os.getenv("BROADCAST_DB", "broadcast.db")
 
@@ -32,7 +34,12 @@ def del_user(user_id: int):
         cur.execute("DELETE FROM users WHERE user_id=?", (user_id,))
         CON.commit()
 
-async def borad_cast_(_, message, pin=False, forward=False):
+@Bot.on_message(filters.private & ~filters.service)
+async def _track(_, msg):
+    if msg.from_user:
+        add_user(msg.from_user.id)
+
+async def _send_all(_, message, pin=False, forward=False):
     users = all_users()
     if not users:
         return await message.reply_text("❌ No users saved yet.")
@@ -91,26 +98,18 @@ async def borad_cast_(_, message, pin=False, forward=False):
         f"🗑 Removed: {removed}"
     )
 
-def load_broadcast_cmds(Bot, ADMINS):
+@Bot.on_message(filters.command(["broadcast", "b"]) & filters.user(ADMINS))
+async def broadcast_cmd(_, msg):
+    return await _send_all(_, msg)
 
-    # Track users (saves anyone who PMs the bot)
-    @Bot.on_message(filters.private & ~filters.service)
-    async def _track(_, msg):
-        if msg.from_user:
-            add_user(msg.from_user.id)
+@Bot.on_message(filters.command(["pbroadcast", "pb"]) & filters.user(ADMINS))
+async def pbroadcast_cmd(_, msg):
+    return await _send_all(_, msg, pin=True)
 
-    @Bot.on_message(filters.command(["broadcast", "b"]) & filters.user(ADMINS))
-    async def b_handler(_, msg):
-        return await borad_cast_(_, msg)
+@Bot.on_message(filters.command(["forward", "fd"]) & filters.user(ADMINS))
+async def forward_cmd(_, msg):
+    return await _send_all(_, msg, forward=True)
 
-    @Bot.on_message(filters.command(["pbroadcast", "pb"]) & filters.user(ADMINS))
-    async def pb_handler(_, msg):
-        return await borad_cast_(_, msg, pin=True)
-
-    @Bot.on_message(filters.command(["forward", "fd"]) & filters.user(ADMINS))
-    async def fb_handler(_, msg):
-        return await borad_cast_(_, msg, forward=True)
-
-    @Bot.on_message(filters.command(["pforward", "pfd"]) & filters.user(ADMINS))
-    async def pfb_handler(_, msg):
-        return await borad_cast_(_, msg, pin=True, forward=True)
+@Bot.on_message(filters.command(["pforward", "pfd"]) & filters.user(ADMINS))
+async def pforward_cmd(_, msg):
+    return await _send_all(_, msg, pin=True, forward=True)
