@@ -5,7 +5,6 @@ from contextlib import closing
 from pyrogram import filters
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated, PeerIdInvalid, ChatAdminRequired
 
-# Import your Bot client + ADMINS from bot.py
 from bot import Bot, ADMINS
 
 DB = os.getenv("BROADCAST_DB", "broadcast.db")
