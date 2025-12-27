@@ -1,34 +1,41 @@
 # TG/broadcast.py
+import os
+import sqlite3
 import asyncio
+from contextlib import closing
 from pyrogram import filters
-from pyrogram.errors import (
-    FloodWait,
-    UserIsBlocked,
-    InputUserDeactivated,
-    PeerIdInvalid,
-    ChatAdminRequired
-)
+from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated, PeerIdInvalid, ChatAdminRequired
 
-# This file expects:
-# Bot  -> Pyrogram Client
-# Vars.ADMINS -> list of admin IDs
-# uts -> dict of users {"123456": True}
-# sync() -> function that saves uts
+DB = os.getenv("BROADCAST_DB", "broadcast.db")
+
+def _con():
+    con = sqlite3.connect(DB, check_same_thread=False)
+    with closing(con.cursor()) as cur:
+        cur.execute("CREATE TABLE IF NOT EXISTS users (user_id INTEGER PRIMARY KEY)")
+        con.commit()
+    return con
+
+CON = _con()
+
+def add_user(user_id: int):
+    with closing(CON.cursor()) as cur:
+        cur.execute("INSERT OR IGNORE INTO users (user_id) VALUES (?)", (user_id,))
+        CON.commit()
+
+def all_users():
+    with closing(CON.cursor()) as cur:
+        cur.execute("SELECT user_id FROM users")
+        return [x[0] for x in cur.fetchall()]
+
+def del_user(user_id: int):
+    with closing(CON.cursor()) as cur:
+        cur.execute("DELETE FROM users WHERE user_id=?", (user_id,))
+        CON.commit()
 
 async def borad_cast_(_, message, pin=False, forward=False):
-
-    def del_users(user_id):
-        try:
-            user_id = str(user_id)
-            if user_id in uts:
-                del uts[user_id]
-                sync()
-        except Exception:
-            pass
-
-    user_ids = list(uts.keys())
-    if not user_ids:
-        return await message.reply_text("❌ No users in DB.")
+    users = all_users()
+    if not users:
+        return await message.reply_text("❌ No users saved yet.")
 
     text = None
     if not message.reply_to_message:
@@ -40,15 +47,12 @@ async def borad_cast_(_, message, pin=False, forward=False):
                 "OR use: `/broadcast your text`"
             )
 
-    status = await message.reply_text(f"📣 Sending to **{len(user_ids)}** users...")
+    status = await message.reply_text(f"📣 Sending to **{len(users)}** users...")
 
-    sent, failed, removed, pinned = 0, 0, 0, 0
+    sent = failed = removed = pinned = 0
 
-    for uid_str in user_ids:
-        uid = int(uid_str)
+    for uid in users:
         try:
-            sent_msg = None
-
             if forward and message.reply_to_message:
                 sent_msg = await message.reply_to_message.forward(chat_id=uid)
             elif message.reply_to_message:
@@ -62,37 +66,39 @@ async def borad_cast_(_, message, pin=False, forward=False):
                 try:
                     await _.pin_chat_message(uid, sent_msg.id, disable_notification=True)
                     pinned += 1
-                except ChatAdminRequired:
-                    pass
-                except Exception:
+                except (ChatAdminRequired, Exception):
                     pass
 
             await asyncio.sleep(0.05)
 
         except FloodWait as e:
             await asyncio.sleep(int(e.value) + 1)
-
         except (UserIsBlocked, InputUserDeactivated, PeerIdInvalid):
             failed += 1
-            del_users(uid_str)
+            del_user(uid)
             removed += 1
-
         except Exception:
             failed += 1
-            del_users(uid_str)
+            del_user(uid)
             removed += 1
 
     return await status.edit_text(
-        f"✅ Broadcast Done!\n\n"
-        f"👥 Total: {len(user_ids)}\n"
+        f"✅ Done!\n\n"
+        f"👥 Total: {len(users)}\n"
         f"✅ Sent: {sent}\n"
         f"📌 Pinned: {pinned}\n"
         f"❌ Failed: {failed}\n"
         f"🗑 Removed: {removed}"
     )
 
+def load_broadcast_cmds(Bot, ADMINS):
 
-def load_broadcast_cmds(Bot, ADMINS, uts, sync):
+    # Track users (saves anyone who PMs the bot)
+    @Bot.on_message(filters.private & ~filters.service)
+    async def _track(_, msg):
+        if msg.from_user:
+            add_user(msg.from_user.id)
+
     @Bot.on_message(filters.command(["broadcast", "b"]) & filters.user(ADMINS))
     async def b_handler(_, msg):
         return await borad_cast_(_, msg)
