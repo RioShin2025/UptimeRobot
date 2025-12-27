@@ -17,14 +17,14 @@ log = get_logger(__name__)
 async def refresh_handler(_, query):
   if not _.FSB or _.FSB == []:
     await wait_flood(query.answer
-                         )(" ✅ Thanks for joining! You can now use the bot. ",
+                         )(" <blockquote>✅ Thanks for joining! You can now use the bot. </blockquote>",
                            show_alert=True)
     return await wait_flood(query.message.delete)()
 
   channel_button, change_data = await check_fsb(_, query)
   if not channel_button:
     await wait_flood(query.answer
-                         )(" ✅ Thanks for joining! You can now use the bot. ",
+                         )(" <blockquote>✅ Thanks for joining! You can now use the bot.</blockquote> ",
                            show_alert=True)
     return await wait_flood(query.message.delete)()
 
@@ -85,7 +85,7 @@ async def start_callback(client, query):
 @Bot.on_callback_query(filters.regex("^help$"))
 async def help_callback(client, query):
   txt_ = """
-<b>🛠️ UptimeRobot Help Section</b>
+</blockquote><b>🛠️ UptimeRobot Help Section</b>
 
 <i>Welcome to <b>UptimeRobot</b>, your personal uptime monitoring assistant!
 We keep an eye on your website or server 24/7 and alert you the moment it goes down — so you can act fast and keep your users happy.</i>
@@ -112,7 +112,7 @@ __➪ You can monitor multiple sites at once.__
 
 __➪ Check logs anytime using the /status command.__
 
-**👨‍💻 Developer: @Wizard_bots**"""
+**👨‍💻 Developer: @Wizard_bots**</blockquote>"""
   button = [
       [
           InlineKeyboardButton("🌐 Check Uptime", callback_data="check_uptime"),
@@ -189,7 +189,7 @@ async def stats_callback(client, query):
   python_version = platform.python_version()
 
   response_text = f"""
-  🖥️ **System Statistics Dashboard**
+  <blockquote>🖥️ **System Statistics Dashboard**
 
   💾 **Disk Storage**
   ├ Total:  `{total_disk_h}`
@@ -217,7 +217,7 @@ async def stats_callback(client, query):
   └ Uptime:  `{uptime}`
 
   ⏱️ **Performance**
-  └ Current Ping:  `{time_taken_ms:.3f} ms`"""
+  └ Current Ping:  `{time_taken_ms:.3f} ms`</blockquote>"""
 
   button = [[
       InlineKeyboardButton("🌐 Check Uptime", callback_data="check_uptime"),
@@ -377,7 +377,7 @@ async def add_uptime_callback(client, query):
       query.edit_message_media
   )(media=InputMediaPhoto(
       random.choice(PICS),
-      caption="<i>Please send me the url of the website you want to add</i>"),
+      caption="<blockquote><i>Please send me the url of the website you want to add</i></blockquote>"),
     reply_markup=InlineKeyboardMarkup([
         [InlineKeyboardButton(" Cancel ", callback_data="process:cancel")],
     ]))
