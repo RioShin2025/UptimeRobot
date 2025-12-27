@@ -74,8 +74,14 @@ npm install
 
 ### 5º. Creating the config file
 You must Fill bot.pu
-After that you only need to fill all fields in the file.
+After that you only need to fill all fields in the files'
 
+
+
+
+
+
+### CREDITS
 .<h3 align="center">
     ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>
