@@ -9,7 +9,7 @@ from bot import Bot, ADMINS
 
 @Bot.on_message(filters.command(["restart", "reboot"]) & filters.user(ADMINS))
 async def restart_cmd(_, msg):
-    m = await msg.reply_text("♻️ Restarting bot...")
+    m = await msg.reply_text("♻️ ʀᴇsᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ... 👾")
 
     # Give Telegram time to send the message
     await asyncio.sleep(1.5)
