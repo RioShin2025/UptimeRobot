@@ -44,9 +44,10 @@ async def on_private_message(client, message):
 @Bot.on_message(filters.command("start"))
 async def start(client, message):
   txt_ = """
-<b>Hello, I am a bot that can check the uptime of your website.</b>
-
-<b>Ping: {}</b>"""
+<blockquote>**Hello, I am a bot that can check the uptime of your website.
+like an unseen guardian in the background.
+I stay awake — watching your website.**
+<b>Ping: {}</b></blockquote>"""
   try:
     xt_ = time.time() - client.ping
     check_time_ = time.strftime("%Hh %Mm %Ss", time.gmtime(xt_))
@@ -78,7 +79,7 @@ async def start(client, message):
 async def status(client, message):
   return await wait_flood(message.reply_photo)(
     random.choice(PICS),
-    caption="<b><i>Check Through Below Buttons</i></b>",
+    caption="<blockquote><b><i>Check Through Below Buttons</i></b></blockquote>",
     reply_markup=InlineKeyboardMarkup([
       [InlineKeyboardButton("🌐 Check Uptime", url=client.msg.link)],
       [
