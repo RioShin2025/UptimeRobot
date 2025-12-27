@@ -1,0 +1,6 @@
+tgcrypto-pyrofork
+pyrofork
+pymongo
+psutil
+fastapi
+uvicorn
