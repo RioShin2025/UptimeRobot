@@ -36,7 +36,7 @@ async def ping_cmd(_, msg):
     ping_ms = (end - start) * 1000
 
     text = f"""
-🖥️ **System Statistics Dashboard**
+<blockquote>🖥️ **System Statistics Dashboard**
 
 💾 **Disk Storage**
 ├ Total: {format_bytes(disk.total)}
@@ -64,7 +64,7 @@ async def ping_cmd(_, msg):
 └ Uptime: {uptime}
 
 ⏱️ **Performance**
-└ Current Ping: {ping_ms:.3f} ms
+└ Current Ping: {ping_ms:.3f} ms  </blockquote>
 """
 
     await msg.reply_text(text)
