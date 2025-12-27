@@ -19,13 +19,13 @@ ADMINS = os.environ.get("ADMINS", "8385101318")
 ADMINS = [int(admin) for admin in (ADMINS).split(" ")]
 ADMINS.append(OWNER)
 
-MAIN_CHANNEL = os.environ.get("MAIN_CHANNEL", "ShanksSupport")
+MAIN_CHANNEL = os.environ.get("MAIN_CHANNEL", "BOTSKINGDOMSGROUP")
 FORCE_SUB_TEXT = os.environ.get(
     "FORCE_SUB_TEXT",
     """<b><i>❗️ You must join our channel before using this feature:</i></b>"""
 )
 
-FORCE_SUB_CHANNEL = os.environ.get("FORCE_SUB_CHANNEL", "𝕸𝖆𝖎𝖓 𝕮𝖍𝖆𝖓𝖓𝖊𝖑: Wizard_Bots")
+FORCE_SUB_CHANNEL = os.environ.get("FORCE_SUB_CHANNEL", "𝕸𝖆𝖎𝖓 𝕮𝖍𝖆𝖓𝖓𝖊𝖑: ")
 
 SETTINGS = {
     "ADMINS": ADMINS,
