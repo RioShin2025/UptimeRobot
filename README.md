@@ -11,17 +11,39 @@
 ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ɪs ᴀ sɪᴍᴘʟᴇ ᴡᴇʙʜᴏᴏᴋ ғᴏʀ ᴜᴘᴛɪᴍᴇʀᴏʙᴏᴛ ᴛʜᴀᴛ sᴇɴᴅs ʏᴏᴜ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇssᴀɢᴇ.
 
 <p align="center">
-<a href="https://github.com/RioShin2025/UptimeRobot/stargazers"><img src="https://img.shields.io/github/stars/RioShin2025/SequenceBot
-                                                          ?color=black&logo=github&logoColor=black&style=for-the-badge"for-the-badge/></a>
-<a href="https://github.com/RioShin2025/SequenceBot/network/members"> <img src="https://img.shields.io/github/forks/RioShin2025/SequenceBot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/RioShin2025/SequenceBot/blob/RioShin/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/RioShin2025/UptimeRobot/stargazers"><img src="https://img.shields.io/github/stars/RioShin2025/UptimeRobot
+                                                          
+<a href="https://github.com/RioShin2025/uptimeRobot/network/members"> <img src="https://img.shields.io/github/forks/RioShin2025/uptimeRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/RioShin2025/uptimeRobot/blob/shanks/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
-<a href="https://github.com/RioShin2025/SequenceBot/commits/RioShin2025"> <img src="https://img.shields.io/github/last-commit/RioShin2025/SequenceBot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href="https://github.com/RioShin2025/uptimeRobot/commits/RioShin2025"> <img src="https://img.shields.io/github/last-commit/RioShin2025/uptimeRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 <p align="center">
 
+<b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
+</p>
 
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
+
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/RioShin/SequenceBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs/ʟᴏᴄᴀʟ 」─
+</h3>
+
+
+
+
+
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ  ʀᴇɴᴅᴇʀ/ᴋᴏʏᴇʙ/ʀᴀɪʟᴡᴀʏ」─
+</h3>
+
+<details><summary><b> - ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ᴅᴇᴄʀɪᴘᴛɪᴏɴ:</b></summary>
 
 
 ### 1º. Clone this repository
@@ -54,5 +76,48 @@ npm install
 You must Fill bot.pu
 After that you only need to fill all fields in the file.
 
-.
+.<h3 align="center">
+    ─「 ᴄʀᴇᴅɪᴛs 」─
+</h3>
+
+- <b>[ᴍᴀᴅᴇ ʙʏ]([https://t.me/BOTSKINGDOMS](https://t.me/BOTSKINGDOMS))  ➻  [ʀɪᴏ sʜɪɴ [ᴛɢ]](https://t.me/RioShin) </b>
+- <b>[ᴘᴏᴡᴇʀᴅ ʙʏ]([https://t.me/BOTSKINGDOMS](https://t.me/BOTSKINGDOMS))  ➻  [ʙᴏᴛsᴋɪɴɢᴅᴏᴍs](https://t.me/BOTSKINGDOMS) </b>
+
+<h3 align="center">
+<b>🤝 ᴄᴏɴᴛʀɪʙᴜᴛɪɴɢ
+ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴs ᴀʀᴇ ᴀʟᴡᴀʏs ᴡᴇʟᴄᴏᴍᴇ! ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴏᴘᴇɴ ᴘᴜʟʟ ʀᴇǫᴜᴇsᴛs ᴛᴏ ɪᴍᴘʀᴏᴠᴇ ᴛʜɪs ʀᴇᴘᴏ 🖤 </b>
+</h3>
+
+# 📝 ʟɪᴄᴇɴsᴇ
+›› ʏᴏᴜ ᴄᴀɴ ꜰʀᴇᴇʟʏ ʜᴏsᴛ ᴛʜɪs ʀᴇᴘᴏ ʏᴏᴜʀsᴇʟꜰ. ᴀʟʟ ᴡᴇ ᴀsᴋ ɪs ᴛʜᴀᴛ ʏᴏᴜ ᴘʀᴏᴠɪᴅᴇ ᴘʀᴏᴘᴇʀ ᴄʀᴇᴅɪᴛs ʙʏ ʟɪɴᴋɪɴɢ ᴛᴏ ᴛʜɪs ʀᴇᴘᴏsɪᴛᴏʀʏ.
+
+›› ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ ᴍɪᴛ.
+ʏᴏᴜ ᴀʀᴇ ꜰʀᴇᴇ ᴛᴏ ᴜsᴇ, ᴍᴏᴅɪꜰʏ, ᴀɴᴅ sʜᴀʀᴇ ɪᴛ — ʙᴜᴛ ʏᴏᴜ ᴍᴜsᴛ ᴀʟsᴏ ɢɪᴠᴇ ᴄʀᴇᴅɪᴛ ᴀɴᴅ ᴋᴇᴇᴘ ɪᴛ ᴜɴᴅᴇʀ ᴛʜᴇ ᴍɪᴛ ʟɪᴄᴇɴsᴇ.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
