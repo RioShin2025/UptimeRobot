@@ -1,10 +1,27 @@
 
+<h2 align="center">
+    ──「 UᴘᴛɪᴍᴇRᴏʙᴏᴛ 」──
+</h2>
+
+<p align="center">
+  <img src="https://i.rj1.dev/vgrAW.png">
+</p>
+ʏᴏᴜ ᴀᴅᴅ ᴜᴘᴛɪᴍᴇ ғᴏʀᴍ ʙᴏᴛ.
+ᴇᴠᴇʀʏᴛʜɪɴɢ ᴊᴜsᴛ ғᴏʀᴍ ʙᴏᴛ.
+ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ɪs ᴀ sɪᴍᴘʟᴇ ᴡᴇʙʜᴏᴏᴋ ғᴏʀ ᴜᴘᴛɪᴍᴇʀᴏʙᴏᴛ ᴛʜᴀᴛ sᴇɴᴅs ʏᴏᴜ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇssᴀɢᴇ.
+
+<p align="center">
+<a href="https://github.com/RioShin2025/UptimeRobot/stargazers"><img src="https://img.shields.io/github/stars/RioShin2025/SequenceBot
+                                                          ?color=black&logo=github&logoColor=black&style=for-the-badge"for-the-badge/></a>
+<a href="https://github.com/RioShin2025/SequenceBot/network/members"> <img src="https://img.shields.io/github/forks/RioShin2025/SequenceBot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/RioShin2025/SequenceBot/blob/RioShin/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
+<a href="https://github.com/RioShin2025/SequenceBot/commits/RioShin2025"> <img src="https://img.shields.io/github/last-commit/RioShin2025/SequenceBot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+</p>
+
+<p align="center">
 
 
-# UptimeRobot 
-You add uptime form bot.
-everything just form bot.
-This project is a simple webhook for UptimeRobot that sends you a telegram message.
 
 
 ### 1º. Clone this repository
