@@ -92,20 +92,19 @@ async def borad_cast_(_, message, pin=False, forward=False):
     )
 
 
-def load_broadcast_cmds(Bot, Vars, uts, sync):
-
-    @Bot.on_message(filters.command(["broadcast", "b"]) & filters.user(Vars.ADMINS))
+def load_broadcast_cmds(Bot, ADMINS, uts, sync):
+    @Bot.on_message(filters.command(["broadcast", "b"]) & filters.user(ADMINS))
     async def b_handler(_, msg):
         return await borad_cast_(_, msg)
 
-    @Bot.on_message(filters.command(["pbroadcast", "pb"]) & filters.user(Vars.ADMINS))
+    @Bot.on_message(filters.command(["pbroadcast", "pb"]) & filters.user(ADMINS))
     async def pb_handler(_, msg):
         return await borad_cast_(_, msg, pin=True)
 
-    @Bot.on_message(filters.command(["forward", "fd"]) & filters.user(Vars.ADMINS))
+    @Bot.on_message(filters.command(["forward", "fd"]) & filters.user(ADMINS))
     async def fb_handler(_, msg):
         return await borad_cast_(_, msg, forward=True)
 
-    @Bot.on_message(filters.command(["pforward", "pfd"]) & filters.user(Vars.ADMINS))
+    @Bot.on_message(filters.command(["pforward", "pfd"]) & filters.user(ADMINS))
     async def pfb_handler(_, msg):
         return await borad_cast_(_, msg, pin=True, forward=True)
