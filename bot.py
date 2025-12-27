@@ -15,7 +15,7 @@ DB_URL = os.environ.get("DB_URL", "mongodb+srv://botskingdom1:gf3vWBaZi5hKwWd0@c
 DB_NAME = os.environ.get("DB_NAME", "UptimeRobot")
 
 OWNER = int(os.environ.get("OWNER", "8367080346"))
-ADMINS = os.environ.get("ADMINS", "8385101318")
+ADMINS = os.environ.get("ADMINS", "1335306418")
 ADMINS = [int(admin) for admin in (ADMINS).split(" ")]
 ADMINS.append(OWNER)
 
