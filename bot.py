@@ -7,14 +7,14 @@ import sys
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 import asyncio
 
-API_ID = int(os.environ.get("API_ID", "3"))
-API_HASH = os.environ.get("API_HASH", "")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+API_ID = int(os.environ.get("API_ID", "26047636"))
+API_HASH = os.environ.get("API_HASH", "d8b1ed69ae1f937c5dd4d3cc8c8de440")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8088340710:AAHjEbDDVjVdAb2coydXuV-IaItsl2c6WbM")
 
-DB_URL = os.environ.get("DB_URL", "")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://botskingdom1:gf3vWBaZi5hKwWd0@cluster0.7tu4jk0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "UptimeRobot")
 
-OWNER = int(os.environ.get("OWNER", "7225682334"))
+OWNER = int(os.environ.get("OWNER", "8367080346"))
 ADMINS = os.environ.get("ADMINS", "8385101318")
 ADMINS = [int(admin) for admin in (ADMINS).split(" ")]
 ADMINS.append(OWNER)
