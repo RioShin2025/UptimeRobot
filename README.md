@@ -89,12 +89,12 @@ After that you only need to fill all fields in the files'
     ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>
 
-- <b>[ᴍᴀᴅᴇ ʙʏ]([https://t.me/Wizard_Bots](https://t.me/Wizard_Bots))  ➻  [sʜᴀɴᴋs [ᴛɢ]](https://t.me/RioShin) </b>
+- <b>[ᴍᴀᴅᴇ ʙʏ]([https://t.me/Wizard_Bots](https://t.me/Wizard_Bots))  ➻  [sʜᴀɴᴋs [ᴛɢ]](https://t.me/Wizard_Bots) </b>
 - <b>[ᴘᴏᴡᴇʀᴅ ʙʏ]([https://t.me/Wizard_Bots](https://t.me/Wizard_Bots))  ➻  [ᴡɪᴢᴀʀᴅ ʙᴏᴛs](https://t.me/Wizard_Bots) </b>
 
 <h3 align="center">
 <b>🤝 ᴄᴏɴᴛʀɪʙᴜᴛɪɴɢ
-ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴs ᴀʀᴇ ᴀʟᴡᴀʏs ᴡᴇʟᴄᴏᴍᴇ! ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴏᴘᴇɴ ᴘᴜʟʟ ʀᴇǫᴜᴇsᴛs ᴛᴏ ɪᴍᴘʀᴏᴠᴇ ᴛʜɪs ʀᴇᴘᴏ 🖤 </b>
+ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴs ᴀʀᴇ ᴀʟᴡᴀʏs ᴡᴡᴇʟᴄᴏᴍᴇ ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴏᴘᴇɴ ᴘᴜʟʟ ʀᴇǫᴜᴇsᴛs ᴛᴏ ɪᴍᴘʀᴏᴠᴇ ᴛʜɪs ʀᴇᴘᴏ 🖤 </b>
 </h3>
 
 # 📝 ʟɪᴄᴇɴsᴇ
