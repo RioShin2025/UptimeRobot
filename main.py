@@ -1,5 +1,7 @@
 from bot import Bot
 
+from TG.broadcast import load_broadcast_cmds
+load_broadcast_cmds(Bot, Vars, uts, sync)
 from Tools.db import get_all_urls, remove_expired_urls
 from Tools.requets_handler import runs_checking
 import asyncio
