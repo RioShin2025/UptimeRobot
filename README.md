@@ -33,20 +33,12 @@
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs/ʟᴏᴄᴀʟ 」─
-</h3>
+</hh3
 
-
-
-
-
-<h3 align="center">
-    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ  ʀᴇɴᴅᴇʀ/ᴋᴏʏᴇʙ/ʀᴀɪʟᴡᴀʏ」─
-</h3>
-
-<details><summary><b> - ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ᴅᴇᴄʀɪᴘᴛɪᴏɴ:</b></summary>
 
 
 ### 1º. Clone this repository
+
 ```
 git clone https://github.com/RioShin2025/UptimeRobot.git
 ```
@@ -75,6 +67,17 @@ npm install
 ### 5º. Creating the config file
 You must Fill bot.pu
 After that you only need to fill all fields in the files'
+
+
+
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ  ʀᴇɴᴅᴇʀ/ᴋᴏʏᴇʙ/ʀᴀɪʟᴡᴀʏ」─
+</h3>
+
+<details><summary><b> - ᴄʀᴇᴅɪᴛs ᴀɴᴅ ʟɪᴄᴇɴsᴇ:</b></summary>
+
+
+
 
 
 
