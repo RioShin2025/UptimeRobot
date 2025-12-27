@@ -4,7 +4,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.rj1.dev/vgrAW.png">
+  <img src="https://i.rj1.dev/rLGHU.jpg">
 </p>
 ʏᴏᴜ ᴀᴅᴅ ᴜᴘᴛɪᴍᴇ ғᴏʀᴍ ʙᴏᴛ.
 ᴇᴠᴇʀʏᴛʜɪɴɢ ᴊᴜsᴛ ғᴏʀᴍ ʙᴏᴛ.
